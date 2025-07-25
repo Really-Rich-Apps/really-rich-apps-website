@@ -1,0 +1,17 @@
+---
+---
+<section class="h-screen flex flex-col justify-center items-center text-center px-6">
+  <img src="/logo.png" alt="Really Rich Apps Logo" class="w-24 h-24 mb-6" />
+  <h1 class="text-5xl font-bold mb-4">Really Rich Apps</h1>
+  <p class="text-xl max-w-xl">Expert developers of state-of-the-art cross-platform apps for modern businesses and gamified engagement solutions.</p>
+  <div id="hero-animation" class="mt-8 w-full max-w-md h-64"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script is:inline>
+    gsap.from("#hero-animation", {
+      y: 100,
+      opacity: 0,
+      duration: 1.5,
+      ease: "power3.out",
+    });
+  </script>
+</section>

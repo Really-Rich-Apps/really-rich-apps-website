@@ -1,0 +1,35 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Showcase from '../components/Showcase.astro';
+import Insights from '../components/Insights.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Really Rich Apps</title>
+
+    <meta name="description" content="State-of-the-art mobile and web development from Really Rich Apps.">
+    <meta property="og:title" content="Really Rich Apps" />
+    <meta property="og:description" content="Experts in mobile apps, cross-platform development, and gamified experiences." />
+    <meta property="og:image" content="/logo.png" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.ico" />
+
+  </head>
+  <body class="bg-gray-950 text-white">
+    <Header />
+    <Hero />
+    <Services />
+    <Showcase />
+      <Insights />
+  <Contact />
+  <Footer />
+  </body>
+</html>
