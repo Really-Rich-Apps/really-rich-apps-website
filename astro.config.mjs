@@ -1,10 +1,15 @@
-import { defineConfig } from 'astro/config';
+// @ts-check
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 import mdx from '@astrojs/mdx';
-import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
+// https://astro.build/config
 export default defineConfig({
+  vite: {
+    plugins: [tailwindcss()],
+  },
   site: 'https://reallyrichapps.github.io',
-  integrations: [tailwind(), mdx(), sitemap()],
+  integrations: [tailwindcss(), mdx(), sitemap()],
   outDir: './dist',
 });

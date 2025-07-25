@@ -1,0 +1,20 @@
+{
+  "name": "really-rich-apps-website",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "astro build && touch dist/.nojekyll && git add dist && git commit -m 'Deploy' && git subtree push --prefix dist origin gh-pages"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.1",
+    "@astrojs/sitemap": "^3.4.1",
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.12.3"
+  },
+  "devDependencies": {
+    "gsap": "^3.12.2"
+  }
+}
